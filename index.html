@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
+  <head><title>Portfolio</title></head>
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+  <p class="card">Card Preview</p>
+  <a href="/QRCode/index.html" >QR Code</a>
+  <script>
+    document.querySelector(".card").onclick = () => {
+      history.pushState({}, '', "/CardPreview/index.html");
+    }
+  </script>
 </body>
 </html>
