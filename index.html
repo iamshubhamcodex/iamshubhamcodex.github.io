@@ -4,7 +4,12 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
-  <a href="/CardPreview/index.html" >Card Preview</a>
+  <p class="card">Card Preview</p>
   <a href="/QRCode/index.html" >QR Code</a>
+  <script>
+    document.querySelector(".card").onclick = () => {
+      history.pushState("/CardPreview/index.html");
+    }
+  </script>
 </body>
 </html>
